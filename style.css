@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #1E1E1E;
+}
+
+.navbar-element {
+    font-family: "Jura", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 5px 10px
+}
+
+
+/* Hero section */
+
+.hero {
+    background-image: url("hero.jpg");
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: "Josefin Slab", serif;
+    font-size: 85px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+/* second section */
+.section2{
+    height: 569px;
+    background-color: rgba(180, 155, 44, 0.25);
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+
+}
+
+.section2-left p{
+    font-family: "Jura", sans-serif;
+    font-weight: 400;
+    font-size: 43px;
+    line-height: 118%;
+    letter-spacing: 10px;
+    /* margin: 0 60px; */
+
+}
+
+.section2-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 569px;
+    /* margin: 20px;  */
+    /* margin: 0 auto; */
+    /* width: 70%;  */
+    border-right: 1px solid #000000;
+}
+
+.section2-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 569px;
+
+
+
+}
