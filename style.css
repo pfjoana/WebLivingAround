@@ -91,6 +91,12 @@ a {
     line-height: 118%;
 }
 
+.middle-line {
+    display: flex;
+    align-items: center;
+    height: 569px;
+}
+
 .remote-container {
     width: 400px;
     padding: 20px;
@@ -100,11 +106,11 @@ a {
       --s: 30px; /* the size on the corner */
   --t: 20px;  /* the thickness of the border */
   --g: 0px; /* the gap between the border and image */
-  
+
   padding: calc(var(--g) + var(--t));
   outline: var(--t) solid #000000; /* the color here */
   /* outline-offset: calc(-1*var(--t)); */
-  mask:
+    mask:
     conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
      0 0/calc(100% - var(--s)) calc(100% - var(--s)),
     conic-gradient(#000 0 0) content-box;
@@ -142,6 +148,7 @@ a {
     background-image: url("img-section3.jpg");
     /* width: 50%; */
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 515px;
 }
