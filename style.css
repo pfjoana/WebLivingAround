@@ -20,7 +20,7 @@ a {
     font-family: "Jura", sans-serif;
     font-size: 25px;
     font-weight: 700;
-    margin: 5px 10px
+    margin: 5px 20px
 }
 
 
@@ -54,9 +54,6 @@ a {
 .section2{
     height: 569px;
     background-color: rgba(180, 155, 44, 0.25);
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 }
 
 .section2-left p{
@@ -65,8 +62,6 @@ a {
     font-size: 43px;
     line-height: 118%;
     letter-spacing: 10px;
-    /* margin: 0 60px; */
-
 }
 
 .section2-left {
@@ -74,9 +69,6 @@ a {
     align-items: center;
     justify-content: center;
     height: 569px;
-    /* margin: 20px;  */
-    /* margin: 0 auto; */
-    /* width: 70%;  */
 }
 
 .section2-right {
@@ -100,24 +92,18 @@ a {
 .remote-container {
     width: 400px;
     padding: 20px;
-    border-color: #000000;
-    border-style: solid;
-    /* border-width: 10px 0 0 10px; */
-      --s: 30px; /* the size on the corner */
-  --t: 20px;  /* the thickness of the border */
-  --g: 0px; /* the gap between the border and image */
-
-  padding: calc(var(--g) + var(--t));
-  outline: var(--t) solid #000000; /* the color here */
-  /* outline-offset: calc(-1*var(--t)); */
-    mask:
-    conic-gradient(at var(--s) var(--s),#0000 75%,#000 0)
-     0 0/calc(100% - var(--s)) calc(100% - var(--s)),
-    conic-gradient(#000 0 0) content-box;
-  /* transition: .4s; */
-
+    --b: 10px; /* thickness of the border */
+    --c: black; /* color of the border */
+    --w: 50px; /* width of border */
+ 
+    border: var(--b) solid #0000; /* space for the border */
+    --_g: #0000 90deg, var(--c) 0;
+    --_p: var(--w) var(--w) border-box no-repeat;
+ 
+    background: conic-gradient(
+    from 90deg at top var(--b) left var(--b),
+    var(--_g)) 0 0 / var(--_p), conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 100% 100% / var(--_p);
 }
-
 
 .remote-list {
     font-family: "Jura", sans-serif;
@@ -136,7 +122,6 @@ a {
 }
 
 
-
 /* section 3 */
 .section3 {
     height: 515px;
@@ -146,22 +131,24 @@ a {
 
 .section3-left{
     background-image: url("img-section3.jpg");
-    /* width: 50%; */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 515px;
 }
 
-.section3-right {
-    background-color: #000000;
-    color: #ffffff;
+.section-btn {
     /* text-align: center; */
     height: 515px;
     font-family: "Jura", sans-serif;
     font-weight: 700;
     font-size: 30px;
     text-align: center;
+}
+
+.section-btn-black {
+    background-color: #000000;
+    color: #ffffff;
 }
 
 .customFlexColumn {
@@ -171,9 +158,8 @@ a {
     justify-content: center;
 }
 
-.section3-btn{
+.homepage-btn {
     border-radius: 35px;
-    border: 3px solid white;
     font-family: "Jura", sans-serif;
     font-weight: 700;
     font-size: 25px;
@@ -182,11 +168,29 @@ a {
     height: 77px;
 }
 
+.custom-btn-white {
+    border: 3px solid white;
+}
+
+.custom-btn-black {
+    border: 3px solid rgb(0, 0, 0);
+}
+
+.custom-btn-full {
+    background-color: #000000;
+    color: white;
+}
+
+.custom-btn-full a {
+    color: white;
+}
+
+
 .section3 a {
     color: #ffffff;
 }
 
-.btn-arrow{
+.btn-arrow-right {
     position: absolute;
     bottom: 40px;
     right: 40px;
@@ -197,7 +201,66 @@ a {
     color: #ffffff;
 }
 
-.btn-arrow a {
-    font-size: 25px;
+.btn-arrow-left {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    border-radius: 50px;
+    border: 3px solid black;
+    height: 60px;
+    width: 60px;
+    color: #000000;
+}
+
+.section4{
+    height: 541px;
+    background-color: rgba(180, 155, 44, 0.25);
+}
+
+
+.section4-right {
+    background-image: url("img-section4.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 541px;
+}
+
+.section-bottom {
+    height: 690px;
+    background-image: url("img-section-bottom.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-arrow-bottom {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50px;
+    border: 3px solid black;
+    height: 60px;
+    width: 60px;
+    color: #000000;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+
+.footer-container {
+    background-color: #000000;
+}
+
+footer {
+    font-family: "Jura", sans-serif;
+}
+
+.footer-title {
+    font-weight: 700;
+    font-size: 30px;
     color: #ffffff;
+}
+
+.footer-author {
+    color: #ffffff;
+
 }
