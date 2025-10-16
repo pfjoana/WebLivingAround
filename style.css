@@ -262,5 +262,18 @@ footer {
 
 .footer-author {
     color: #ffffff;
+}
 
+
+
+/* contacts page  */
+.contacts-main {
+    background: black;
+    width: 100vw;
+
+}
+
+.contacts-main img {
+    object-fit: cover;
+    opacity: 0.6;
 }
