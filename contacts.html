@@ -13,10 +13,98 @@
     <title>Living Around - Contacts</title>
 </head>
 <body>
-    <div class="contacts-main">
-        <img src="contacts-background.jpg" alt="">
+    <section class="contacts-main">
+      <div class="overlay"></div>
 
-    </div>
-    
+      <!-- navbar -->
+      <nav class="navbar mb-5">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo-contacts.png" alt="">
+        </a>
+        <div class="navbar2">
+            <div class="navbar2-element ">
+                <a href="">ACOMODAÇÕES</a>
+            </div>
+            <div class="navbar2-element ">
+                <a href="">LOCAIS</a>
+            </div>
+            <div class="navbar2-element ">
+                <a href="">BLOG</a>
+            </div>
+            <div class="navbar2-element ">
+                <a href="contacts.html">CONTATOS</a>
+            </div>
+        </div>
+      </nav>
+
+
+      <div class="container d-flex">
+        <div class="row mt-5">
+          <div class="col-6 container contacts-form customFlexColumn">
+
+            <form action="">
+              <div class="my-4">
+                <label for="name" class="custom-label">Nome</label>
+                <input type="text" class="form-control custom-input" id="name" aria-describedby="nameHelp">
+              </div>
+              <div class="mb-4">
+                <label for="email" class="custom-label">Email</label>
+                <input type="text" class="form-control custom-input" id="email" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-5">
+                <label for="message" class="custom-label">Mensagem</label>
+                <textarea class="form-control" id="message" rows="4"></textarea>
+              </div>
+              <div class="homepage-btn custom-btn-white customFlexColumn mt-5 mb-4">
+                  <a href="">Enviar</a>
+              </div>
+            </form>
+
+
+            <!-- bootstrap form -->
+            <!-- <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name" aria-describedby="nameHelp">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark">Enviar</button>
+            </form> -->
+
+          </div>
+
+
+          <div class="col-6 container contacts-quote ">
+            <div class="">
+              <blockquote class="text-center">
+                <p>“Viajar é descobrir que todos estão errados sobre outros países.”</p>
+              </blockquote>
+              <figcaption class="text-end"> - Aldous Huxley</figcaption>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+
+    </section>
+
+
+
 </body>
 </html>

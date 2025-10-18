@@ -1,33 +1,64 @@
+/* classes gerais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.customFlexColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 /* Navbar */
-.navbar {
+.navbar-homepage {
     display: flex;
     justify-content: flex-end;
     margin: 0px 15px;
 }
 
-a {
-    text-decoration: none;
-    color: #1E1E1E;
+.navbar2 {
+    display: flex;
+    justify-content: flex-end;
+    margin: 30px 15px;
 }
 
 .navbar-element {
     font-family: "Jura", sans-serif;
     font-size: 25px;
     font-weight: 700;
-    margin: 5px 20px
+    margin: 5px 20px;
+    color: #1E1E1E;
+}
+
+.navbar2-element {
+    font-family: "Josefin Slab", serif;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 5px 50px;
+    z-index: 2;
+}
+
+.navbar-brand img {
+  margin-left: 50px;
 }
 
 
 /* Hero section */
 
 .hero {
-    background-image: url("hero.jpg");
+    background-image: url("images/hero.jpg");
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -95,11 +126,11 @@ a {
     --b: 10px; /* thickness of the border */
     --c: black; /* color of the border */
     --w: 50px; /* width of border */
- 
+
     border: var(--b) solid #0000; /* space for the border */
     --_g: #0000 90deg, var(--c) 0;
     --_p: var(--w) var(--w) border-box no-repeat;
- 
+
     background: conic-gradient(
     from 90deg at top var(--b) left var(--b),
     var(--_g)) 0 0 / var(--_p), conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 100% 100% / var(--_p);
@@ -130,7 +161,7 @@ a {
 }
 
 .section3-left{
-    background-image: url("img-section3.jpg");
+    background-image: url("images/img-section3.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -149,13 +180,6 @@ a {
 .section-btn-black {
     background-color: #000000;
     color: #ffffff;
-}
-
-.customFlexColumn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .homepage-btn {
@@ -219,7 +243,7 @@ a {
 
 
 .section4-right {
-    background-image: url("img-section4.jpg");
+    background-image: url("images/img-section4.jpg");
     background-size: cover;
     background-position: center;
     height: 541px;
@@ -227,7 +251,7 @@ a {
 
 .section-bottom {
     height: 690px;
-    background-image: url("img-section-bottom.jpg");
+    background-image: url("images/img-section-bottom.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -268,12 +292,60 @@ footer {
 
 /* contacts page  */
 .contacts-main {
-    background: black;
-    width: 100vw;
-
+  position: relative;
+  min-height: 100vh;
+  background-image: url('images/contacts-background.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
-.contacts-main img {
-    object-fit: cover;
-    opacity: 0.6;
+.overlay {
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.element-white a {
+  color: white;
+}
+
+
+.contacts-form {
+  background-color: #000000;
+  border-radius: 30px;
+  color: #ffffff;
+  z-index: 2;
+  padding: 20px;
+  width: 450px;
+  height: 100%;
+}
+
+.custom-label {
+  font-family: "Jura", sans-serif;
+  font-size: 20px;
+}
+
+.custom-input {
+  height: 55px;
+}
+
+.contacts-quote {
+  z-index: 2;
+  color: #ffffff;
+  font-family: "Jura", sans-serif;
+  padding-left: 200px;
+  height: 100%;
+  padding-top: 50px;
+}
+
+.contacts-quote blockquote {
+  font-size: 25px;
+}
+
+.contacts-quote figcaption {
+  font-size: 20px;
 }
