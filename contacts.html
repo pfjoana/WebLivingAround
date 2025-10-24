@@ -14,7 +14,7 @@
 </head>
 <body>
   <section class="contacts-main">
-    <div class="overlay"></div>
+    <div class="contacts-overlay"></div>
 
     <!-- navbar -->
     <nav class="navbar z-2 mb-5">
@@ -26,7 +26,7 @@
               <a href="products.html">ACOMODAÇÕES</a>
           </div>
           <div class="navbar2-element custom-white">
-              <a href="">LOCAIS</a>
+              <a href="locais.html">LOCAIS</a>
           </div>
           <div class="navbar2-element custom-white">
               <a href="">BLOG</a>
@@ -38,21 +38,21 @@
     </nav>
 
 
-    <div class="container d-flex">
-      <div class="row mt-5">
-        <div class="col-6 container contacts-form customFlexColumn">
+    <div class="container mt-5 pt-4">
+      <div class="row mt-5 gap-5">
+        <div class="col-lg-6 container contacts-form customFlexColumn">
 
           <form action="">
             <div class="my-4">
-              <label for="name" class="custom-label">Nome</label>
-              <input type="text" class="form-control custom-input" id="name" aria-describedby="nameHelp">
+              <label for="name" class="custom-label-contacts">Nome</label>
+              <input type="text" class="form-control custom-input" id="name">
             </div>
             <div class="mb-4">
-              <label for="email" class="custom-label">Email</label>
-              <input type="text" class="form-control custom-input" id="email" aria-describedby="emailHelp">
+              <label for="email" class="custom-label-contacts">Email</label>
+              <input type="text" class="form-control custom-input" id="email">
             </div>
             <div class="mb-5">
-              <label for="message" class="custom-label">Mensagem</label>
+              <label for="message" class="custom-label-contacts">Mensagem</label>
               <textarea class="form-control" id="message" rows="4"></textarea>
             </div>
             <div class="homepage-btn custom-btn-white customFlexColumn mt-5 mb-4">
@@ -63,7 +63,7 @@
         </div>
 
 
-        <div class="col-6 container contacts-quote ">
+        <div class="col-lg-6 contacts-quote ">
           <div class="">
             <blockquote class="text-center">
               <p>“Viajar é descobrir que todos estão errados sobre outros países.”</p>
