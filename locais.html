@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-      <section class="contacts-main">
-    <div class="overlay"></div>
+    <section class="locals-main">
+    <div class="locals-overlay"></div>
 
     <!-- navbar -->
     <nav class="navbar z-2 mb-5">
@@ -25,7 +25,7 @@
               <a href="products.html">ACOMODAÇÕES</a>
           </div>
           <div class="navbar2-element custom-white">
-              <a href="">LOCAIS</a>
+              <a href="locais.html">LOCAIS</a>
           </div>
           <div class="navbar2-element custom-white">
               <a href="">BLOG</a>
@@ -37,40 +37,50 @@
     </nav>
 
 
-    <div class="container d-flex">
+    <div class="container">
       <div class="row mt-5">
-        <div class="col-6 container locais-form customFlexColumn">
+        <div class="col-lg-6 locais-form customFlexColumn">
 
           <form action="">
-
-            <div class="mb-4">
-              <label for="pais" class="custom-label">Email</label>
+            <div class="my-4">
+              <label for="pais" class="custom-label-locals">Escolha o país:</label>
                 <select id="pais" class="form-select">
-                    <option>Disabled select</option>
-                </select>            
+                    <option value="" disabled selected hidden>país</option>
+                    <option value="PT">Portugal</option>
+
+                </select>
             </div>
-            <div class="mb-5">
-              <label for="message" class="custom-label">Mensagem</label>
-              <textarea class="form-control" id="message" rows="4"></textarea>
+            <div class="mb-4">
+              <label for="cidade" class="custom-label-locals">Escolha a cidade:</label>
+                <select id="cidade" class="form-select">
+                  <option value="none" disabled selected hidden>cidade</option>
+                  <option value="porto">Porto</option>
+
+                </select>
             </div>
-            <div class="homepage-btn custom-btn-white customFlexColumn mt-5 mb-4">
-                <a href="">Enviar</a>
+            <div class="homepage-btn custom-btn-green customFlexColumn mt-5 mb-4">
+                <a href="">Ver</a>
             </div>
           </form>
-
         </div>
 
 
-        <div class="col-6 container contacts-quote ">
-          <div class="">
-
-
+        <div class="col-lg-6">
+          <!-- mapa -->
+          <div class="map-box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.6244496535373!2d-8.604475287686828!3d41.15672307121069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2464f6e2607545%3A0x76bf593c1c442e0d!2sRua%20da%20Alegria%20666%2C%204000-099%20Porto!5e1!3m2!1spt-PT!2spt!4v1761332818221!5m2!1spt-PT!2spt" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
+          <!-- morada -->
+           <div class="morada-box">
+            <h4>LIVING AROUND - Porto</h4>
+            <p>Rua da Alegria, 666<br>4000-789 - Porto</p>
+            <p>livingaround_porto@living.com</p>
+           </div>
         </div>
       </div>
     </div>
   </section>
 
-    
+
 </body>
 </html>
