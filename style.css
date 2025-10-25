@@ -1,51 +1,51 @@
 /* classes gerais */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 
 .customFlexColumn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
-/* Navbar */
+/* ----- Navbar */
 .navbar-homepage {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0px 15px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px 15px;
 }
 
 .navbar2 {
-    display: flex;
-    justify-content: flex-end;
-    margin: 30px 15px;
+  display: flex;
+  justify-content: flex-end;
+  margin: 30px 15px;
 }
 
 .navbar-element {
-    font-family: "Jura", sans-serif;
-    font-size: 25px;
-    font-weight: 700;
-    margin: 5px 20px;
-    color: #1E1E1E;
+  font-family: "Jura", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 5px 20px;
+  color: #1E1E1E;
 }
 
 .navbar2-element {
-    font-family: "Josefin Slab", serif;
-    font-size: 25px;
-    font-weight: 700;
-    margin: 5px 50px;
-    z-index: 2;
+  font-family: "Josefin Slab", serif;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 5px 50px;
+  z-index: 2;
 }
 
 /* text colors for the navbars */
@@ -57,42 +57,40 @@ a {
   color: #ffffff;
 }
 
-
-
-
 .navbar-brand img {
   margin-left: 50px;
 }
+
 
 
 /* Hero sections */
 
 /* hero homepage */
 .hero {
-    background-image: url("images/hero.jpg");
-    height: 100vh;
-    width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
+  background-image: url("images/hero.jpg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
 }
 
 .hero h1 {
-    font-family: "Josefin Slab", serif;
-    font-size: 85px;
-    font-weight: 700;
-    color: #ffffff;
+  font-family: "Josefin Slab", serif;
+  font-size: 85px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .hero-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 
-/* hero da products page  */
+/* hero da products(acomodações) page  */
 .hero-products {
   background-image: url("images/hero-products.jpg");
   width: 100%;
@@ -123,207 +121,207 @@ a {
 
 /* second section */
 .section2{
-    height: 569px;
-    background-color: rgba(180, 155, 44, 0.25);
+  height: 569px;
+  background-color: rgba(180, 155, 44, 0.25);
 }
 
 .section2-left p{
-    font-family: "Jura", sans-serif;
-    font-weight: 400;
-    font-size: 43px;
-    line-height: 118%;
-    letter-spacing: 10px;
+  font-family: "Jura", sans-serif;
+  font-weight: 400;
+  font-size: 43px;
+  line-height: 118%;
+  letter-spacing: 10px;
 }
 
 .section2-left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 569px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 569px;
 }
 
 .section2-right {
-    height: 569px;
+  height: 569px;
 }
 
 
 .section2-right h3 {
-    font-family: "Jura", sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 118%;
+  font-family: "Jura", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 118%;
 }
 
 .middle-line {
-    display: flex;
-    align-items: center;
-    height: 569px;
+  display: flex;
+  align-items: center;
+  height: 569px;
 }
 
 .remote-container {
-    width: 400px;
-    padding: 20px;
-    --b: 10px; /* thickness of the border */
-    --c: black; /* color of the border */
-    --w: 50px; /* width of border */
+  width: 400px;
+  padding: 20px;
+  --b: 10px;
+  --c: black;
+  --w: 50px;
 
-    border: var(--b) solid #0000; /* space for the border */
-    --_g: #0000 90deg, var(--c) 0;
-    --_p: var(--w) var(--w) border-box no-repeat;
+  border: var(--b) solid #0000;
+  --_g: #0000 90deg, var(--c) 0;
+  --_p: var(--w) var(--w) border-box no-repeat;
 
-    background: conic-gradient(
-    from 90deg at top var(--b) left var(--b),
-    var(--_g)) 0 0 / var(--_p), conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 100% 100% / var(--_p);
+  background: conic-gradient(
+  from 90deg at top var(--b) left var(--b),
+  var(--_g)) 0 0 / var(--_p), conic-gradient(from -90deg at bottom var(--b) right var(--b), var(--_g)) 100% 100% / var(--_p);
 }
 
 .remote-list {
-    font-family: "Jura", sans-serif;
-    font-weight: 700;
-    font-size: 19px;
-    padding: 10px;
+  font-family: "Jura", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  padding: 10px;
 }
 
 .text-green {
-    color: #686931;
+  color: #686931;
 }
 
 .sec2container-right {
-    border-left: 1px solid #000000;
-    padding: 50px;
+  border-left: 1px solid #000000;
+  padding: 50px;
 }
 
 
 /* section 3 */
 .section3 {
-    height: 515px;
-    width: 100%;
+  height: 515px;
+  width: 100%;
 }
 
 .section3-left{
-    background-image: url("images/img-section3.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 515px;
+  background-image: url("images/img-section3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 515px;
 }
 
 .section-btn {
-    height: 515px;
-    font-family: "Jura", sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    text-align: center;
+  height: 515px;
+  font-family: "Jura", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
 }
 
 .section-btn-black {
-    background-color: #000000;
-    color: #ffffff;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 .homepage-btn {
-    border-radius: 35px;
-    font-family: "Jura", sans-serif;
-    font-weight: 700;
-    font-size: 25px;
-    padding: 5px 30px;
-    width: 309px;
-    height: 77px;
+  border-radius: 35px;
+  font-family: "Jura", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  padding: 5px 30px;
+  width: 309px;
+  height: 77px;
 }
 
 .custom-btn-white {
-    border: 3px solid white;
+  border: 3px solid white;
 }
 
 .custom-btn-black {
-    border: 3px solid rgb(0, 0, 0);
+  border: 3px solid rgb(0, 0, 0);
 }
 
 .custom-btn-full {
-    background-color: #000000;
-    color: white;
+  background-color: #000000;
+  color: white;
 }
 
 .custom-btn-full a {
-    color: white;
+  color: white;
 }
 
 
 .section3 a {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .btn-arrow-right {
-    position: absolute;
-    bottom: 40px;
-    right: 40px;
-    border-radius: 50px;
-    border: 3px solid white;
-    height: 60px;
-    width: 60px;
-    color: #ffffff;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 50px;
+  border: 3px solid white;
+  height: 60px;
+  width: 60px;
+  color: #ffffff;
 }
 
 .btn-arrow-left {
-    position: absolute;
-    bottom: 30px;
-    left: 40px;
-    border-radius: 50px;
-    border: 3px solid black;
-    height: 60px;
-    width: 60px;
-    color: #000000;
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  border-radius: 50px;
+  border: 3px solid black;
+  height: 60px;
+  width: 60px;
+  color: #000000;
 }
 
 .section4{
-    height: 541px;
-    background-color: rgba(180, 155, 44, 0.25);
+  height: 541px;
+  background-color: rgba(180, 155, 44, 0.25);
 }
 
 
 .section4-right {
-    background-image: url("images/img-section4.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 541px;
+  background-image: url("images/img-section4.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 541px;
 }
 
 .section-bottom {
-    height: 690px;
-    background-image: url("images/img-section-bottom.jpg");
-    background-size: cover;
-    background-position: center;
+  height: 690px;
+  background-image: url("images/img-section-bottom.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .btn-arrow-bottom {
-    position: absolute;
-    bottom: 40px;
-    right: 40px;
-    border-radius: 50px;
-    border: 3px solid black;
-    height: 60px;
-    width: 60px;
-    color: #000000;
-    font-weight: 700;
-    font-size: 30px;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 50px;
+  border: 3px solid black;
+  height: 60px;
+  width: 60px;
+  color: #000000;
+  font-weight: 700;
+  font-size: 30px;
 }
 
 
 .footer-container {
-    background-color: #000000;
+  background-color: #000000;
 }
 
 footer {
-    font-family: "Jura", sans-serif;
+  font-family: "Jura", sans-serif;
 }
 
 .footer-title {
-    font-weight: 700;
-    font-size: 30px;
-    color: #ffffff;
+  font-weight: 700;
+  font-size: 30px;
+  color: #ffffff;
 }
 
 .footer-author {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 
@@ -390,8 +388,42 @@ footer {
 }
 
 
-/* ----- products page "Acomodação"------ */
+/* MODAL Contactos de alerta de mensagem enviada */
 
+.modal-contacts {
+  max-width: 741px;
+}
+
+.alert-modal-content {
+  border-radius: 35px;
+  background-color: #ffffff;
+  padding: 30px 80px;
+  text-align: center;
+}
+
+.alert-modal-text {
+  font-family: "Jura", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.alert-modal-btn {
+  background-color: #61B2F5;
+  border-radius: 35px;
+  padding: 10px 50px;
+  font-family: "Jura", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  width: 265px;
+  height: 59px;
+}
+
+
+
+/* ----- products page "Acomodação"------ */
 .section-products {
   background-color: rgba(180, 155, 44, 0.25);
 }
@@ -416,16 +448,60 @@ footer {
 }
 
 
+/* estilo para o modal */
+.modal-products {
+  max-width: 763px;
+}
+
+.modal-content {
+  border-radius: 35px;
+  background-color: #D9D9D9;
+  padding: 30px 40px;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 35px;
+  margin: 0 auto; /*auto para centrar */
+  margin-bottom: 20px;
+}
+
+.modal-content h3 {
+  font-family: "Jura", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.modal-text {
+  font-family: "Jura", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.modal-visto {
+  list-style: none;
+  padding-left: 0;
+}
+
+.modal-btn-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
 
 
 /* ------ Locais Page ------- */
-
 .locals-main {
   position: relative;
   min-height: 100vh;
   background-image: url('images/locais-img.jpg');
   background-size: cover;
   background-position: center;
+
 }
 
 .locals-overlay {
@@ -470,7 +546,6 @@ footer {
   background-size: 30px 30px;
 }
 
-
 /* mapa */
 .map-box {
   z-index: 2;
@@ -484,7 +559,6 @@ footer {
   height: 300px;
 }
 
-
 /* box da morada */
 .morada-box {
   background-color: rgba(0, 0, 0, 0.5);
@@ -494,6 +568,7 @@ footer {
   padding: 35px 45px;
   border-radius: 15px;
   width: 450px;
+  margin-top: 20px;
 }
 
 .morada-box h4 {

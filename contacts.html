@@ -1,20 +1,22 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-    <link rel="stylesheet" href="style.css">
-    <title>Living Around - Contacts</title>
+  <link rel="stylesheet" href="style.css">
+  <title>Living Around - Contacts</title>
 </head>
 <body>
   <section class="contacts-main">
-    <div class="contacts-overlay"></div>
+    <div class="contacts-overlay">
+      <!-- apenas para o efeito escurecido overlay -->
+    </div>
 
     <!-- navbar -->
     <nav class="navbar z-2 mb-5">
@@ -22,18 +24,18 @@
         <img src="images/logo-contacts.png" alt="">
       </a>
       <div class="navbar2">
-          <div class="navbar2-element custom-white">
-              <a href="products.html">ACOMODAÇÕES</a>
-          </div>
-          <div class="navbar2-element custom-white">
-              <a href="locais.html">LOCAIS</a>
-          </div>
-          <div class="navbar2-element custom-white">
-              <a href="">BLOG</a>
-          </div>
-          <div class="navbar2-element custom-white">
-              <a href="contacts.html">CONTATOS</a>
-          </div>
+        <div class="navbar2-element custom-white">
+          <a href="products.html">ACOMODAÇÕES</a>
+        </div>
+        <div class="navbar2-element custom-white">
+          <a href="locais.html">LOCAIS</a>
+        </div>
+        <div class="navbar2-element custom-white">
+          <a href="">BLOG</a>
+        </div>
+        <div class="navbar2-element custom-white">
+          <a href="contacts.html">CONTATOS</a>
+        </div>
       </div>
     </nav>
 
@@ -42,6 +44,7 @@
       <div class="row mt-5 gap-5">
         <div class="col-lg-6 container contacts-form customFlexColumn">
 
+          <!-- form de contacto -->
           <form action="">
             <div class="my-4">
               <label for="name" class="custom-label-contacts">Nome</label>
@@ -56,14 +59,14 @@
               <textarea class="form-control" id="message" rows="4"></textarea>
             </div>
             <div class="homepage-btn custom-btn-white customFlexColumn mt-5 mb-4">
-                <a href="">Enviar</a>
+                <a href="" data-bs-toggle="modal" data-bs-target="#alertModal">Enviar</a>
             </div>
           </form>
 
         </div>
 
-
-        <div class="col-lg-6 contacts-quote ">
+        <!-- coluna para a quote -->
+        <div class="col-lg-5 contacts-quote ">
           <div class="">
             <blockquote class="text-center">
               <p>“Viajar é descobrir que todos estão errados sobre outros países.”</p>
@@ -73,6 +76,24 @@
         </div>
       </div>
     </div>
+
+
+    <!-- Modal Alerta mensagem enviada -->
+    <div class="modal" id="alertModal">
+      <div class="modal-contacts modal-dialog">
+        <div class="alert-modal-content">
+          <p class="alert-modal-text">Seu formulário foi enviado com sucesso!</p>
+
+          <!-- box do botao para o centrar-->
+          <div class="modal-btn-box">
+            <div class="alert-modal-btn customFlexColumn">
+              <a href="#" data-bs-dismiss="modal">Ok</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
