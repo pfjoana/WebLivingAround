@@ -1,9 +1,9 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Locais</title>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Locais</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
@@ -12,8 +12,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="locals-main">
-    <div class="locals-overlay"></div>
+  <section class="locals-main">
+    <div class="locals-overlay">
+      <!-- apenas para o efeito escurecido overlay -->
+    </div>
 
     <!-- navbar -->
     <nav class="navbar z-2 mb-5">
@@ -21,24 +23,25 @@
         <img src="images/logo-contacts.png" alt="">
       </a>
       <div class="navbar2">
-          <div class="navbar2-element custom-white">
-              <a href="products.html">ACOMODAÇÕES</a>
-          </div>
-          <div class="navbar2-element custom-white">
-              <a href="locais.html">LOCAIS</a>
-          </div>
-          <div class="navbar2-element custom-white">
-              <a href="">BLOG</a>
-          </div>
-          <div class="navbar2-element custom-white">
-              <a href="contacts.html">CONTATOS</a>
-          </div>
+        <div class="navbar2-element custom-white">
+          <a href="products.html">ACOMODAÇÕES</a>
+        </div>
+        <div class="navbar2-element custom-white">
+          <a href="locais.html">LOCAIS</a>
+        </div>
+        <div class="navbar2-element custom-white">
+          <a href="">BLOG</a>
+        </div>
+        <div class="navbar2-element custom-white">
+          <a href="contacts.html">CONTATOS</a>
+        </div>
       </div>
     </nav>
 
 
     <div class="container">
-      <div class="row mt-5">
+      <div class="row mt-5 gx-5">
+        <!-- metade form col-6 / metade col-6 mapa/morada -->
         <div class="col-lg-6 locais-form customFlexColumn">
 
           <form action="">
@@ -47,7 +50,6 @@
                 <select id="pais" class="form-select">
                     <option value="" disabled selected hidden>país</option>
                     <option value="PT">Portugal</option>
-
                 </select>
             </div>
             <div class="mb-4">
@@ -55,9 +57,10 @@
                 <select id="cidade" class="form-select">
                   <option value="none" disabled selected hidden>cidade</option>
                   <option value="porto">Porto</option>
-
                 </select>
             </div>
+
+            <!-- botao do form -->
             <div class="homepage-btn custom-btn-green customFlexColumn mt-5 mb-4">
                 <a href="">Ver</a>
             </div>
@@ -71,16 +74,16 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.6244496535373!2d-8.604475287686828!3d41.15672307121069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2464f6e2607545%3A0x76bf593c1c442e0d!2sRua%20da%20Alegria%20666%2C%204000-099%20Porto!5e1!3m2!1spt-PT!2spt!4v1761332818221!5m2!1spt-PT!2spt" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <!-- morada -->
-           <div class="morada-box">
-            <h4>LIVING AROUND - Porto</h4>
-            <p>Rua da Alegria, 666<br>4000-789 - Porto</p>
-            <p>livingaround_porto@living.com</p>
+           <div class="morada-box d-flex justify-content-center">
+            <div>
+              <h4>LIVING AROUND - Porto</h4>
+              <p>Rua da Alegria, 666<br>4000-789 - Porto</p>
+              <p>livingaround_porto@living.com</p>
+            </div>
            </div>
         </div>
       </div>
     </div>
   </section>
-
-
 </body>
 </html>
